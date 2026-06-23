@@ -8,7 +8,7 @@ import edu.usc.sql.krawler.buildgraphs.UIState;
 import edu.usc.sql.krawler.buildnodes.ExtractNodesJavaScript;
 import edu.usc.sql.krawler.buildnodes.GetPageEntryElement;
 import edu.usc.sql.krawler.interaction.KeyStrokeExecutor;
-import edu.usc.sql.krawler.newKrawler.*;
+import edu.usc.sql.krawler.core.*;
 import edu.usc.sql.krawler.utilities.Utils;
 import edu.usc.sql.krawler.utilities.Pair;
 import edu.usc.sql.krawler.webproxy.GetTestSubjects;

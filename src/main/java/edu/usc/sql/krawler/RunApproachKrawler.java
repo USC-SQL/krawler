@@ -3,8 +3,8 @@ package edu.usc.sql.krawler;
 //import edu.usc.sql.krawler.io.WriteExecutionTimeToCSV;
 import edu.usc.sql.krawler.graphs.UIGraphState;
 import edu.usc.sql.krawler.io.WriteUIGraphToJSON;
-import edu.usc.sql.krawler.newKrawler.Construct_KrawlerNew_Keys;
-import edu.usc.sql.krawler.newKrawler.Results;
+import edu.usc.sql.krawler.core.Construct_Krawler;
+import edu.usc.sql.krawler.core.Results;
 import edu.usc.sql.krawler.utilities.Config;
 import edu.usc.sql.krawler.utilities.Utils;
 import edu.usc.sql.krawler.utilities.KeysToCrawl;
@@ -109,7 +109,7 @@ public class RunApproachKrawler {
 
       gsKRFG = new GetTestSubjects(SUBJECT_NAME, proxyPort, false);
 
-      Construct_KrawlerNew_Keys constttt = new Construct_KrawlerNew_Keys(
+      Construct_Krawler constttt = new Construct_Krawler(
               gsKRFG,
               screenModalityType_Size,
               viewPort_x,

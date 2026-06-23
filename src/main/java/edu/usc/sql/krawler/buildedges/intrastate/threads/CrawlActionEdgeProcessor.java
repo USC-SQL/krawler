@@ -6,7 +6,7 @@ import edu.usc.sql.krawler.buildedges.intrastate.utils.CrawlEdgeExceptions;
 import edu.usc.sql.krawler.buildnodes.ExtractNodesJavaScript;
 import edu.usc.sql.krawler.interaction.KeyStrokeExecutor;
 import edu.usc.sql.krawler.buildgraphs.CrawlTraceToState;
-import edu.usc.sql.krawler.newKrawler.Results;
+import edu.usc.sql.krawler.core.Results;
 import edu.usc.sql.krawler.utilities.Utils;
 import edu.usc.sql.krawler.utilities.Pair;
 import edu.usc.sql.krawler.webproxy.GetTestSubjects;

@@ -1,4 +1,4 @@
-package edu.usc.sql.krawler.newKrawler;
+package edu.usc.sql.krawler.core;
 
 
 import edu.usc.sql.krawler.buildedges.CrawlAction;
@@ -26,7 +26,7 @@ import org.openqa.selenium.WebDriver;
 import java.util.*;
 
 @NoArgsConstructor
-public class Construct_KrawlerNew_Keys {
+public class Construct_Krawler {
 
   String subjectName;
   WebDriver refDriver;
@@ -43,8 +43,8 @@ public class Construct_KrawlerNew_Keys {
   Set<String> keysToCrawl;
   int numberOfConcurrentWebdrivers;
 
-  public Construct_KrawlerNew_Keys(GetTestSubjects gs, /*RunnerTracker coct,*/ String screenModalityType, int viewPort_x,
-                                   int viewPort_y, int zoomPercentage, Set<String> keysToCrawl, int numberOfConcurrentWebdrivers) {
+  public Construct_Krawler(GetTestSubjects gs, /*RunnerTracker coct,*/ String screenModalityType, int viewPort_x,
+                           int viewPort_y, int zoomPercentage, Set<String> keysToCrawl, int numberOfConcurrentWebdrivers) {
     this.subjectName = gs.getSubjectName();
     this.refDriver = gs.getRefDriver();
     this.url = gs.getUrl();

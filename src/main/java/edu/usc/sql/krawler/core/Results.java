@@ -1,4 +1,4 @@
-package edu.usc.sql.krawler.newKrawler;
+package edu.usc.sql.krawler.core;
 
 
 import edu.usc.sql.krawler.buildgraphs.UIState;
