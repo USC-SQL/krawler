@@ -290,19 +290,17 @@ public class Construct_Krawler {
     //System.exit(0);
 
 
-
+    Set<String> keysToCrawlForEdges = new HashSet<>(keysToCrawl);
+    keysToCrawlForEdges.remove("TAB");
+    keysToCrawlForEdges.remove("SHIFTTAB");
+    keysToCrawlForEdges.remove("ENTER");
 
     ///////// VERSION 1
     for (UIState state : states) {
       Set<CrawlAction> actionsToCrawlForEdgesForUIState = new HashSet<>();
 
 
-      keysToCrawl.remove("TAB");
-      keysToCrawl.remove("SHIFTTAB");
-      keysToCrawl.remove("ENTER");
-
-
-      Set<CrawlAction> ac = GetCrawlActionsForUIState.process(subjectName, state, keysToCrawl);
+      Set<CrawlAction> ac = GetCrawlActionsForUIState.process(subjectName, state, keysToCrawlForEdges);
       actionsToCrawlForEdgesForUIState.addAll(ac);
 
 //      actionsToCrawlForEdgesForUIState.addAll(
